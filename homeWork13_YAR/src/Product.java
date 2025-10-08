@@ -15,7 +15,7 @@ public class Product {
 
     @Override
     public String toString(){
-        return "Товар [артикул = " + this.id + ", название = " + this.name + ", цена = " + ", категория = " + this.category;
+        return "Товар [артикул = " + this.id + ", название = " + this.name + ", цена = " + this.price + ", категория = " + this.category;
     }
 
     @Override

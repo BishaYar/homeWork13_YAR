@@ -30,14 +30,11 @@ public class Order {
         if (basket.length != order.basket.length)
             return rez;
 
-        if (customer == order.customer) {
-            if (basket[0] == null) return rez;
-            else {
-                for (int i = 0; i < basket.length; i++) {
-                    if (Objects.equals(basket[i], order.basket[i]))
-                        rez = true;
-                    else return rez;
-                }
+        if (Objects.equals(customer, order.customer)) {
+            for (int i = 0; i < basket.length; i++) {
+                if (Objects.equals(basket[i], order.basket[i]) && (basket[i] != null && order.basket[i] != null))
+                    rez = true;
+                else return rez;
             }
         }
 

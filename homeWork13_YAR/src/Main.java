@@ -21,7 +21,7 @@ public class Main {
 
         Order order1 = new Order("Иванов", bas1);
         Order order2 = new Order("Иванов", bas3);
-        Order order3 = new Order("Иванов", bas2);
+        Order order3 = new Order("Иванов", bas3);
         Order order4 = new Order("Иванов", bas3);
 
         System.out.println(order1.toString());
